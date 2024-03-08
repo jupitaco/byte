@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import connect from '../../assets/connect.svg';
 import connectWallet from '../../assets/ConnectWallet.svg';
 import iconHead from '../../assets/icon-head.png';
 import logo from '../../assets/logo.svg';
 import logoFooter from '../../assets/logo-footer.svg';
-import logoSmall from '../../assets/logo-small.svg';
+// import logoSmall from '../../assets/logo-small.svg';
 import copy from '../../assets/copyright.svg';
-import copySmall from '../../assets/copyright-small.svg';
+// import copySmall from '../../assets/copyright-small.svg';
 import tF from '../../assets/twitter-footer.svg';
-import tFSmall from '../../assets/twitter-small.svg';
+// import tFSmall from '../../assets/twitter-small.svg';
 import teleF from '../../assets/telegram-footer.svg';
-import teleSmall from '../../assets/telegram-small.svg';
+// import teleSmall from '../../assets/telegram-small.svg';
 import { Link } from 'react-router-dom';
 import { BsList, BsXLg } from 'react-icons/bs';
 
@@ -23,8 +23,8 @@ const ConnectWallet = () => {
 
   return (
     <main>
-      <section className='one-buy pt-lg-4'>
-        <nav className='navbar navbar-expand-lg container mt-4'>
+      <section className='walletPage  pt-lg-4 d-flex flex-column'>
+        <nav className=' navbar navbar-expand-lg container mt-4 px-2 px-md-5'>
           <Link className='navbar-brand' to='/'>
             <img src={logo} alt='' />
           </Link>
@@ -77,160 +77,137 @@ const ConnectWallet = () => {
           </div>
         </nav>
 
-        <article className='container spacing move-left'>
-          <div className='row justify-content-center mx-auto'>
-            <div className='col-lg-4 mt-5'>
-              <div className='box-img-buy ' style={{ color: '#C9A732' }}>
-                <div>
-                  <button className='buy-button text-black text-center w-full w-fit'>
-                    TOTAL DIVIDENDS
-                  </button>
-                </div>
-                <h1 className='pt-5 big pt-5 text-center'>
-                  <img
-                    src={connectWallet}
-                    className='pt-5'
-                    style={{ width: '210px' }}
-                    alt=''
-                  />
-                </h1>
-                <div
-                  className='big-sub mx-3 mt-4'
-                  data-aos='fade-in'
-                  data-aos-duration='1200'
-                  data-aos-delay='500'
+        <article className='container col-11 col-md-8 mx-auto mt-5 pt-5'>
+          <ul className='d-flex flex-wrap justify-content-center mx-auto gap-5'>
+            <li data-aos='fade-left' className='boxCard'>
+              <div>
+                <button className='buy-button text-black text-center w-full w-fit'>
+                  TOTAL DIVIDENDS
+                </button>
+              </div>
+              <div
+                className='box-img-buy d-flex flex-column justify-content-end pb-2'
+                style={{ color: '#C9A732' }}
+              >
+                <figure className=' big text-center'>
+                  <img src={connectWallet} className='pt-5' alt='' />
+                </figure>
+                <figure className='big-sub mx-3  '>
+                  <img src={iconHead} className='' alt='' />
+                </figure>
+                {/* <!-- <div>Price 0.00143$</div> --> */}
+              </div>
+            </li>
+
+            <li data-aos='fade-right' className='boxCard'>
+              <div className=' '>
+                <button className='buy-button text-black text-center w-full w-fit'>
+                  PENDING REWARDS
+                </button>
+              </div>
+              <div
+                className='box-img-buy d-flex flex-column justify-content-end pb-2'
+                style={{ color: '#C9A732' }}
+              >
+                <figure className=' big text-center'>
+                  <img src={connectWallet} className='pt-5' alt='' />
+                </figure>
+                <figure
+                  className='big-sub mx-3  '
+                  //   data-aos='fade-in'
+                  //   data-aos-duration='1200'
+                  //
                 >
-                  <img
-                    src={iconHead}
-                    className=''
-                    style={{ width: '118px' }}
-                    alt=''
-                  />
-                </div>
+                  <img src={iconHead} className='' alt='' />
+                </figure>
                 {/* <!-- <div>Price 0.00143$</div> --> */}
               </div>
-            </div>
+            </li>
 
-            <div className='col-lg-4 mt-5'>
-              <div className='box-img-buy-2 top' style={{ color: '#C9A732' }}>
-                <div className='d-flex justify-content-end ml-auto'>
-                  <button className='buy-button text-black text-center w-full w-fit'>
-                    PENDING REWARDS
-                  </button>
-                </div>
-                <h1 className='pt-5 big pt-5 text-center'>
-                  <img
-                    src={connectWallet}
-                    className='pt-5'
-                    style={{ width: '210px' }}
-                    alt=''
-                  />
-                </h1>
-                <div className='big-sub mx-3 mt-4'>
-                  <img
-                    src={iconHead}
-                    className=''
-                    style={{ width: '118px' }}
-                    alt=''
-                  />
-                </div>
+            <li data-aos='fade-left' className='boxCard'>
+              <div>
+                <button className='buy-button  '>$BYTE IN WALLET</button>
+              </div>
+              <div
+                className='box-img-buy d-flex flex-column justify-content-end pb-2'
+                style={{ color: '#C9A732' }}
+              >
+                <figure className=' big text-center'>
+                  <img src={connectWallet} className='pt-5' alt='' />
+                </figure>
+                <figure
+                  className='big-sub mx-3  '
+                  //   data-aos='fade-in'
+                  //   data-aos-duration='1200'
+                  //
+                >
+                  <img src={iconHead} className='' alt='' />
+                </figure>
                 {/* <!-- <div>Price 0.00143$</div> --> */}
               </div>
-            </div>
-          </div>
+            </li>
 
-          <div className='row justify-content-center mx-auto mt-5'>
-            <div className='col-lg-4 mt-5'>
-              <div className='box-img-buy ' style={{ color: '#C9A732' }}>
-                <div>
-                  <button className='buy-button text-black text-center w-full w-fit'>
-                    $BYTE IN WALLET
-                  </button>
-                </div>
-                <h1 className='pt-5 big pt-5 text-center'>
-                  <img
-                    src={connectWallet}
-                    className='pt-5'
-                    style={{ width: '210px' }}
-                    alt=''
-                  />
-                </h1>
-                <div className='big-sub mx-3 mt-4'>
-                  <img
-                    src={iconHead}
-                    className=''
-                    style={{ width: '118px' }}
-                    alt=''
-                  />
-                </div>
+            <li data-aos='fade-right' className='boxCard'>
+              <div className=' '>
+                <button className='buy-button text-black text-center w-full w-fit'>
+                  TOTAL $BYTE EARNED
+                </button>
+              </div>
+              <div
+                className='box-img-buy d-flex flex-column justify-content-end pb-2'
+                style={{ color: '#C9A732' }}
+              >
+                <figure className=' big text-center'>
+                  <img src={connectWallet} className='pt-5' alt='' />
+                </figure>
+                <figure
+                  className='big-sub mx-3  '
+                  //   data-aos='fade-in'
+                  //   data-aos-duration='1200'
+                  //
+                >
+                  <img src={iconHead} className='' alt='' />
+                </figure>
                 {/* <!-- <div>Price 0.00143$</div> --> */}
               </div>
-            </div>
-
-            <div className='col-lg-4 mt-5'>
-              <div className='box-img-buy-2 top' style={{ color: '#C9A732' }}>
-                <div className='d-flex justify-content-end ml-auto'>
-                  <button className='buy-button text-black text-center w-full w-fit'>
-                    TOTAL $BYTE EARNED
-                  </button>
-                </div>
-                <h1 className='pt-5 big pt-5 text-center'>
-                  <img
-                    src={connectWallet}
-                    className='pt-5'
-                    style={{ width: '210px' }}
-                    alt=''
-                  />
-                </h1>
-                <div className='big-sub mx-3 mt-4'>
-                  <img
-                    src={iconHead}
-                    className=''
-                    style={{ width: '118px' }}
-                    alt=''
-                  />
-                </div>
-                {/* <!-- <div>Price 0.00143$</div> --> */}
-              </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </article>
 
-        <article className='spacing white-bg pt-lg-5 pt-3'>
-          <div className='container pt-lg-3'>
-            <div className='row'>
-              <div className='col-lg-4 ml-lg-5'>
+        <article className=' white-bg '>
+          <div className='col-11 col-md-9 mx-auto '>
+            <div className='d-flex justify-content-between align-items-center'>
+              <div className=' '>
                 <img src={logoFooter} className='big-screen' alt='' />
-                <img src={logoSmall} className='small-screen' alt='' />
+                {/* <img src={logoSmall} className='small-screen' alt='' /> */}
               </div>
 
-              <div className='col-lg-4 pt-4'>
+              <div className='text-center'>
                 <img
                   src={copy}
-                  className='big-screen'
-                  style={{ width: '290px' }}
+                  className='big-screen col-8 col-md-12 text-center'
                   alt=''
                 />
-                <img
+                {/* <img
                   src={copySmall}
                   className='small-screen'
                   style={{ width: '290px' }}
                   alt=''
-                />
+                /> */}
               </div>
 
-              <div className='col-lg-3 pt-4'>
-                <div className='d-lg-flex justify-content-end ml-lg-auto'>
+              <div className=' '>
+                <div className='d-flex justify-content-end  '>
                   <a
                     href='https://twitter.com/byteonblast'
                     target='https://twitter.com/byteonblast'
                   >
                     <img src={tF} className='hover-img big-screen' alt='' />
-                    <img
+                    {/* <img
                       src={tFSmall}
                       className='hover-img small-screen'
                       alt=''
-                    />
+                    /> */}
                   </a>
                   <a
                     href='https://t.me/byteonblast'
@@ -238,7 +215,7 @@ const ConnectWallet = () => {
                     className='ml-3'
                   >
                     <img src={teleF} className='hover-img big-screen' alt='' />
-                    <img src={teleSmall} className='small-screen' alt='' />
+                    {/* <img src={teleSmall} className='small-screen' alt='' /> */}
                   </a>
                 </div>
               </div>

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   width: 100%;
@@ -7,7 +11,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
   transition: scroll-behavior 0.4s ease-in-out;
   background-color: #141414;
 }
@@ -21,24 +24,39 @@ a:hover {
   color: #ffda5d !important;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
 @media screen and (min-width: 860px) {
   .navbar {
     background-color: #000000;
     border-radius: 50px;
     height: 80px;
   }
-  .small-screen {
+  /* .small-screen {
     display: none;
-  }
+  } */
 }
 
 @media screen and (max-width: 850px) {
   .move-left {
     margin-left: 20px;
   }
-  .big-screen {
+  /* .big-screen {
     display: none;
-  }
+  } */
   .navbar-toggler {
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
@@ -116,31 +134,56 @@ p {
   margin-top: 120px;
 }
 
+.boxCard {
+  /* display: flex;
+  flex-direction: column; */
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
 .box-img {
-  background-image: url('./assets/box.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  background: url('./assets/Rectangle3.png') top center no-repeat;
+  /* background: url('./assets/box.svg') top center no-repeat; */
+  background-size: 100% 100%;
+  width: 30%;
   height: 290px;
-  width: 290px;
+  color: #c9a732;
+}
+
+.box-img h2 {
+  font-size: 3rem;
+  color: #c9a732;
+  margin: 0;
+}
+
+.box-img p {
+  font-size: 2rem;
+  color: #c9a732;
+  margin: 0.3em 0;
 }
 
 .box-img-buy {
-  background-image: url('./assets/Rectangle2.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url('./assets/Rectangle2.png') top center no-repeat;
+  background-size: 100% 100%;
+  width: 90%;
   height: 300px;
-  width: 300px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 
-.box-img-buy:hover,
+/* .boxCard:hover, */
 .box-img-buy-2:hover {
   transform: scale(1.2);
 }
 
 .box-img-buy-2 {
-  background-image: url('./assets/Rectangle3.png');
+  background-image: url('./assets/Rectangle332.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
@@ -150,14 +193,13 @@ p {
 }
 
 .big {
-  font-size: 45px;
-  font-weight: bolder;
+  width: 80%;
+  margin-left: 1em;
 }
 
 .big-sub {
-  font-size: 38px;
-  line-height: 40px;
-  font-family: 'Iceland', sans-serif;
+  width: 30%;
+  height: 30%;
 }
 
 .button {
@@ -180,17 +222,22 @@ p {
   font-family: 'Iceland', sans-serif;
 }
 
+.tokess {
+  color: #c9a732;
+}
+
 .buy-button {
   background-color: #c9a732;
   border-radius: 4px;
-  width: 200px;
-  font-size: 18px;
-  height: 56px;
+  font-size: 1.1rem;
+  /* height: 56px; */
+  padding: 0.8em 1.3em;
   border: none;
   font-family: 'Iceland', sans-serif;
   /* position: absolute; */
   color: #000000 !important;
   /* bottom: 295px; */
+  margin-bottom: -150px;
 }
 
 .element {
@@ -199,6 +246,13 @@ p {
   color: white;
 
   animation: roll 3s;
+}
+
+.walletPage {
+  background: url('./assets/Hero.png') top center no-repeat;
+  background-size: cover;
+
+  padding-bottom: 5em;
 }
 
 @keyframes roll {
@@ -212,13 +266,33 @@ p {
 }
 
 .roadmap {
-  background-image: url('./assets/roadmap-card.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url('./assets/roadmap.png') top center no-repeat;
+  background-size: 100% 100%;
   border-radius: 10px !important;
+  width: 100%;
+  height: 454px;
+}
+
+.phaseDeets {
+  height: 180px;
+}
+
+.phaseDeets p {
+  color: #000;
+}
+
+.phaseCard {
+  display: grid;
+  place-items: center;
+  margin-top: 1em;
+  padding: 2em 0;
+  border: solid 1px black;
 }
 
 @media screen and (max-width: 850px) {
+  .box-img {
+    width: 45%;
+  }
   .top {
     margin-top: 40px;
   }
@@ -244,7 +318,7 @@ p {
     background-image: url('./assets/Hero.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 650px;
+    /* height: 650px; */
   }
 
   .hold {
@@ -263,22 +337,16 @@ p {
   }
 
   .menu h2 {
-    font-size: 20px;
-    padding: 0px 15px 0px;
-    margin-top: 25px;
+    font-size: 16px;
+    /* padding: 0px 15px 0px;
+    margin-top: 25px; */
   }
 
   .bytee-img {
     width: 400px;
   }
-
   .roadmap {
-    background-image: url('./assets/roadmap-card.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px !important;
-    height: 410px;
-    width: 360px;
+    height: 354px;
   }
 
   .left {
@@ -294,6 +362,20 @@ p {
 }
 
 @media screen and (min-width: 860px) {
+  .menu h2 {
+    font-size: 24px;
+    /* padding: 0px 15px 0px;
+    margin-top: 25px; */
+  }
+  .phaseDeets {
+    height: 220px;
+  }
+
+  .boxCard {
+    width: 45%;
+    transition: all 0.3s ease-in-out;
+  }
+
   .eth {
     position: relative;
     right: 80px;
@@ -322,23 +404,21 @@ p {
     line-height: 50px;
   }
 
-  .roadmap {
-    background-image: url('./assets/roadmap-card.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px !important;
-    height: 420px;
-    width: 400px;
-  }
-
   .button {
     font-size: 38px;
   }
+}
+.white-bg {
+  background: url('./assets/white-bg.png') center center no-repeat;
+  background-size: cover;
+  height: 160px;
+  display: grid;
+  place-items: center;
+  margin-top: 100px;
+}
 
-  .white-bg {
-    background-image: url('./assets/white-bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 160px;
+@media screen and (max-width: 600px) {
+  .box-img {
+    width: 100%;
   }
 }
