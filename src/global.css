@@ -39,6 +39,11 @@ ul li {
   list-style: none;
 }
 
+button {
+  background: transparent;
+  border: none;
+}
+
 @media screen and (min-width: 860px) {
   .navbar {
     background-color: #000000;
@@ -107,7 +112,7 @@ h6 {
   font-family: 'Paladins Condensed';
   /* font-family: "Iceland", sans-serif; */
   font-style: italic;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .pala-straight {
