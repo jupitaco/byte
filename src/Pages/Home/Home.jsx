@@ -49,7 +49,7 @@ const Home = () => {
               </Link>
             </button>
           </div>
-          <div className='d-flex justify-content-end '>
+          <div className='d-flex justify-content-end gap-2 gap-md-3'>
             <a
               href='https://twitter.com/byteonblast'
               target='https://twitter.com/byteonblast'

@@ -1,4 +1,3 @@
-import React from 'react';
 import './NavBar.scss';
 import bConnect from '../../assets/bConnect.png';
 
@@ -23,8 +22,8 @@ const NavBar = () => {
                 <path
                   d='M17 17H4C2.34315 17 1 15.6569 1 14V1M4 8L6.28602 4.85672C7.16673 3.64575 8.94121 3.55887 9.93601 4.67801C10.9707 5.84208 12.8318 5.69296 13.6679 4.37898L15.5 1.5M4 11V14M8 8V14M12 9V14M16 6V14'
                   stroke='#FFDA5D'
-                  stroke-width='1.5'
-                  stroke-linecap='round'
+                  strokeWidth='1.5'
+                  strokeLinecap='round'
                 />
               </svg>
               dexview.com

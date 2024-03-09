@@ -3,9 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import AOS from 'aos';
 import ConnectWallet from './Pages/ConnectWallet/ConnectWallet';
-import generalRoutes from './Layout/Routes/GeneralRutes';
-import dashboardRoutes from './Layout/Routes/DashboardRoutes';
-import DashboardLayout from './Layout/DashboardLayout';
 
 function App() {
   // AOS animation
@@ -17,16 +14,8 @@ function App() {
     <main>
       <Router>
         <Routes>
-          {generalRoutes.map((route, idx) => (
-            <Route key={idx} path={route.path} element={route.element} />
-          ))}
-          {dashboardRoutes.map((route, idx) => (
-            <Route
-              key={idx}
-              path={route.path}
-              element={<DashboardLayout>{route.element}</DashboardLayout>}
-            />
-          ))}
+          <Route path='/' element={<Home />} />
+          <Route path='/connect-wallet' element={<ConnectWallet />} />
         </Routes>
       </Router>
     </main>
