@@ -29,13 +29,13 @@ const ConnectWallet = () => {
             <img src={logo} alt='' />
           </Link>
           <button
-            className='navbar-toggler'
+            className='toggleBtn d-flex d-lg-none'
             type='button'
             onClick={toggleNavbar}
-            data-toggle='collapse'
-            data-target='#navbarSupportedContent'
-            aria-controls='navbarSupportedContent'
-            aria-expanded='false'
+            // data-toggle='collapse'
+            // data-target='#navbarSupportedContent'
+            // aria-controls='navbarSupportedContent'
+            // aria-expanded='false'
             aria-label='Toggle navigation'
           >
             <span className='navbar-toggler-icon'>
@@ -72,14 +72,21 @@ const ConnectWallet = () => {
               data-aos-duration='1200'
               data-aos-delay='1000'
             >
-              <img src={connect} alt='' />
+              <img
+                src={connect}
+                className='col-6 mt-2 mt-lg-0 col-lg-12'
+                alt=''
+              />
             </div>
           </div>
         </nav>
 
         <article className='container col-11 col-md-8 mx-auto mt-5 pt-5'>
-          <ul className='d-flex flex-wrap justify-content-center mx-auto gap-5'>
-            <li data-aos='fade-left' className='boxCard'>
+          <ul
+            data-aos='fade-left'
+            className='d-flex flex-wrap justify-content-center mx-auto gap-5'
+          >
+            <li className='boxCard'>
               <div>
                 <button className='buy-button text-black text-center w-full w-fit'>
                   TOTAL DIVIDENDS
@@ -99,7 +106,7 @@ const ConnectWallet = () => {
               </div>
             </li>
 
-            <li data-aos='fade-right' className='boxCard'>
+            <li className='boxCard'>
               <div className=' '>
                 <button className='buy-button text-black text-center w-full w-fit'>
                   PENDING REWARDS
@@ -124,7 +131,7 @@ const ConnectWallet = () => {
               </div>
             </li>
 
-            <li data-aos='fade-left' className='boxCard'>
+            <li className='boxCard'>
               <div>
                 <button className='buy-button  '>$BYTE IN WALLET</button>
               </div>
@@ -147,7 +154,7 @@ const ConnectWallet = () => {
               </div>
             </li>
 
-            <li data-aos='fade-right' className='boxCard'>
+            <li className='boxCard'>
               <div className=' '>
                 <button className='buy-button text-black text-center w-full w-fit'>
                   TOTAL $BYTE EARNED

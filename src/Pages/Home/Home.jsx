@@ -41,15 +41,15 @@ const Home = () => {
   return (
     <main className='body'>
       <section className='one pt-lg-2 mb-5'>
-        <section className='d-flex justify-content-between'>
-          <div className='pt-lg-5 mt-lg-3 mt-4 mx-lg-5 mx-3'>
-            <button className='dashboard-button text-white text-center w-full w-fit'>
-              <Link to='/connect-wallet' className='dash'>
+        <section className='d-flex justify-content-between align-items-center container mt-4'>
+          <div className=''>
+            <button className='dashboard-button text-white text-center '>
+              <Link to='/connect-wallet' className=''>
                 Dashboard
               </Link>
             </button>
           </div>
-          <div className='d-flex justify-content-end ml-lg-auto px-5 mx-5 pt-lg-5 pt-4 mt-3 '>
+          <div className='d-flex justify-content-end '>
             <a
               href='https://twitter.com/byteonblast'
               target='https://twitter.com/byteonblast'
@@ -82,7 +82,7 @@ const Home = () => {
         // style={{ position: 'relative bottom: 60px' }}
       >
         <div className='d-flex text-white justify-content-center gap-2 gap-md-5 mx-auto menu'>
-          <a href='/'>
+          <a href='/' style={{ color: '#B88E00' }}>
             <h2>HOME</h2>
           </a>
           <a href='/#Roadmap'>
@@ -216,12 +216,7 @@ const Home = () => {
         >
           PRESALE
         </h1>
-        <div
-          className=' text-center pt-4'
-          style={{ color: '#C9A732', fontSize: '48px' }}
-        >
-          Date: To be Announced
-        </div>
+        <p className='dateToBe'>Date: To be Announced</p>
 
         <div className='d-flex flex-column flex-md-row col-11 col-md-8 mx-auto gap-3 justify-content-center mt-5'>
           <figure className=' col-12 col-md-5 m-0'>

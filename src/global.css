@@ -21,7 +21,8 @@ a {
 }
 
 a:hover {
-  color: #ffda5d !important;
+  color: #b88e00 !important;
+  /* color: #ffda5d !important; */
 }
 
 img {
@@ -42,6 +43,10 @@ ul li {
 button {
   background: transparent;
   border: none;
+}
+.toggleBtn {
+  color: #fff;
+  font-size: 26px;
 }
 
 @media screen and (min-width: 860px) {
@@ -182,7 +187,7 @@ p {
   cursor: pointer;
 }
 
-/* .boxCard:hover, */
+.boxCard:hover,
 .box-img-buy-2:hover {
   transform: scale(1.2);
 }
@@ -219,16 +224,20 @@ p {
 .dashboard-button {
   background-color: #ca2023;
   border-radius: 10px;
-  width: 130px;
   font-size: 25px;
-  height: 56px;
   border: none;
-
+  padding: 0.2em 1.3em;
   font-family: 'Iceland', sans-serif;
 }
 
 .tokess {
   color: #c9a732;
+}
+
+.dateToBe {
+  color: #c9a732;
+  text-align: center;
+  font-size: 48px;
 }
 
 .buy-button {
@@ -295,6 +304,12 @@ p {
 }
 
 @media screen and (max-width: 850px) {
+  .dateToBe {
+    color: #c9a732;
+    text-align: center;
+    font-size: 30px;
+  }
+
   .box-img {
     width: 45%;
   }
