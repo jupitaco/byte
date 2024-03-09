@@ -222,6 +222,10 @@ p {
   font-family: 'Iceland', sans-serif;
 }
 
+.descSmall {
+  font-family: 'Iceland', sans-serif;
+}
+
 .dashboard-button {
   background-color: #ca2023;
   border-radius: 10px;

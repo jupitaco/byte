@@ -197,7 +197,9 @@ const Home = () => {
           >
             <h2 className=''> {title} </h2>
             <p>{subtitle}</p>
-            {desc && <small className='col-10 mx-auto m-0'> {desc}</small>}
+            {desc && (
+              <small className='col-10 mx-auto m- descSmall'> {desc}</small>
+            )}
           </article>
         ))}
       </section>
