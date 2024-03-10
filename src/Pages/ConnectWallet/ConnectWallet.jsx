@@ -157,7 +157,7 @@ const ConnectWallet = () => {
             <li className='boxCard'>
               <div className=' '>
                 <button className='buy-button text-black text-center w-full w-fit'>
-                  TOTAL $BYTE EARNED
+                  TOTAL $ETH EARNED
                 </button>
               </div>
               <div
