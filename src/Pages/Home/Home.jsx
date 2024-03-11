@@ -40,7 +40,7 @@ const Home = () => {
 
   return (
     <main className='body'>
-      <section className='one pt-lg-2 mb-5'>
+      <section className='one pt-lg-2 '>
         <section className='d-flex justify-content-between align-items-center container mt-4'>
           <div className=''>
             <button className='dashboard-button text-white text-center '>
@@ -49,7 +49,7 @@ const Home = () => {
               </Link>
             </button>
           </div>
-          <div className='d-flex justify-content-end gap-2 gap-md-3'>
+          <div className='d-flex justify-content-end gap-3'>
             <a
               href='https://twitter.com/byteonblast'
               target='https://twitter.com/byteonblast'
@@ -78,7 +78,7 @@ const Home = () => {
       </section>
 
       <section
-        className='container mt-5'
+        className='container'
         // style={{ position: 'relative bottom: 60px' }}
       >
         <div className='d-flex text-white justify-content-center gap-2 gap-md-5 mx-auto menu'>
