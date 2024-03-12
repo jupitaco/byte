@@ -14,20 +14,26 @@ import { init } from 'ityped';
 const Home = () => {
   const data = [
     { id: 1, title: '1 Billion $BYTE  ', subtitle: 'TOTAL SUPPLY' },
-    { id: 2, title: '50%  ', subtitle: 'BURNT' },
-    { id: 3, title: '8%', subtitle: 'KOLs ALLOCATION' },
-    { id: 4, title: '24%', subtitle: 'PUBLIC PRESALE' },
+    { id: 2, title: '50%  ', subtitle: 'BURN' },
+    { id: 3, title: '10%', subtitle: 'SEED' },
+    { id: 4, title: '15%', subtitle: 'PUBLIC SALE' },
+    { id: 7, title: '3%', subtitle: 'TEAM' },
     { id: 5, title: '12%', subtitle: 'LIQUIDITY' },
-    { id: 6, title: '4%', subtitle: 'MARKETING' },
-    { id: 7, title: '2%', subtitle: 'AIRDROP' },
+    { id: 6, title: '5%', subtitle: 'Community/ Airdrop' },
+    { id: 6, title: '5%', subtitle: 'Marketing/ Development' },
+    // { id: 3, title: '8%', subtitle: 'KOLs ALLOCATION' },
+    // { id: 4, title: '24%', subtitle: 'PUBLIC PRESALE' },
+    // { id: 5, title: '12%', subtitle: 'LIQUIDITY' },
+    // { id: 6, title: '4%', subtitle: 'MARKETING' },
+    // { id: 7, title: '2%', subtitle: 'AIRDROP' },
     {
       id: 8,
       title: '6%',
       subtitle: 'BUY AND SELL TAX',
       desc: '(6% Buy and Sell Tax (2% for $ETH Rewards | 1% AutoLiquidity | 3% Team/Development/Marketing)',
     },
-    { id: 9, title: '1%', subtitle: 'AUTO-LIQUIDITY' },
-    { id: 10, title: '3%', subtitle: 'TEAM' },
+    // { id: 9, title: '1%', subtitle: 'AUTO-LIQUIDITY' },
+    // { id: 10, title: '3%', subtitle: 'TEAM' },
   ];
 
   useEffect(() => {
